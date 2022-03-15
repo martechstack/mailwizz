@@ -1,0 +1,103 @@
+--- -------------------------------------------
+--- Version 2.0.15 - 2021-06-22
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.14 - 2021-06-22
+--- -------------------------------------------
+[BUG] - Extension update message/action was not properly shown in backend area
+[CHG] - Better handling for when GD is missing and we try to resize
+[MSC] - Overall fixes
+[UPD] - Updated composer packages 
+
+--- -------------------------------------------
+--- Version 2.0.13 - 2021-06-21
+--- -------------------------------------------
+[CHG] - Do not disable the API on auto update 
+[CHG] - PHP's proc_open is now required only for Sendmail delivery server type 
+[BUG] - Fix a type error when doing str_replace on a null value 
+[MSC] - Overall fixes
+[UPD] - Updated composer packages 
+
+--- -------------------------------------------
+--- Version 2.0.12 - 2021-06-21
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.11 - 2021-06-16
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.10 - 2021-06-09
+--- -------------------------------------------
+[ADD] - Added ability for lists to add Open Graph tags for the subscription page  
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.9 - 2021-05-10
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.8 - 2021-05-06
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.7 - 2021-05-03
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.6 - 2021-04-14
+--- -------------------------------------------
+[ADD] - Added the 'none' visibility for custom fields  
+[CHG] - The 'hidden' visibility for custom fields will render the fields in form but will hide them 
+[CHG] - The 'none' visibility for custom fields will NOT render the fields in the form  
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.5 - 2021-03-11
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.4 - 2021-03-10
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages 
+
+--- -------------------------------------------
+--- Version 2.0.3 - 2021-03-03
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages 
+
+--- -------------------------------------------
+--- Version 2.0.2 - 2021-03-01
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages 
+
+--- -------------------------------------------
+--- Version 2.0.1 - 2021-03-01
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages 
+
+--- -------------------------------------------
+--- Version 2.0.0 - 2021-02-26
+--- -------------------------------------------
+[RLS] - Initial release

@@ -1,0 +1,6 @@
+__MACOSX
+.DS_Store
+.idea
+vendor
+Dockerfile
+docker-compose.yml
