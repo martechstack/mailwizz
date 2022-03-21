@@ -2056,6 +2056,22 @@ class SendCampaignsCommand extends ConsoleCommand
                     $start = microtime(true);
 
                     try {
+			//---------- Yurii crunch: replace email from -------------//
+                        //todo relocate it to helper or model
+                        $criteriaFromEmail = new CDbCriteria;
+                        $criteriaFromEmail->together = true;
+                        $criteriaFromEmail->with = array('field');
+                        $criteriaFromEmail->compare('subscriber_id', $subscriber->subscriber_id, true);
+                        $criteriaFromEmail->compare('tag', 'FROM');
+                        $listFieldValue = ListFieldValue::model()->find($criteriaFromEmail);
+                        if($listFieldValue && $listFieldValue->value) {
+                            $emailFrom = $listFieldValue->value;
+                        } else {
+                            $emailFrom = 'philiphartpersonal@gmail.com';
+                        }
+                        $emailParams['subscriber_from_email'] = $emailFrom;
+                        //---------- Yurii crunch: replace email from End-------------//
+
 		        $sent     = $server->sendEmail($emailParams);
                         $response = $server->getMailer()->getLog();
                     } catch (Exception $e) {
