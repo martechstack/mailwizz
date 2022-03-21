@@ -2056,7 +2056,7 @@ class SendCampaignsCommand extends ConsoleCommand
                     $start = microtime(true);
 
                     try {
-                        $sent     = $server->sendEmail($emailParams);
+		        $sent     = $server->sendEmail($emailParams);
                         $response = $server->getMailer()->getLog();
                     } catch (Exception $e) {
                         $sent     = false;
