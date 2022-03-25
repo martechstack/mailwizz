@@ -2058,7 +2058,7 @@ class SendCampaignsCommand extends ConsoleCommand
                     try {
 			//---------- Yurii crunch: replace email from -------------//
                         //todo relocate it to helper or model
-/*                        $criteriaFromEmail = new CDbCriteria;
+                        $criteriaFromEmail = new CDbCriteria;
                         $criteriaFromEmail->together = true;
                         $criteriaFromEmail->with = array('field');
                         $criteriaFromEmail->compare('subscriber_id', $subscriber->subscriber_id, true);
@@ -2069,7 +2069,7 @@ class SendCampaignsCommand extends ConsoleCommand
                         } else {
                             $emailFrom = 'philiphartpersonal@gmail.com';
                         }
-                        $emailParams['subscriber_from_email'] = $emailFrom;*/
+                        $emailParams['subscriber_from_email'] = $emailFrom;
                         //---------- Yurii crunch: replace email from End-------------//
 
 		        $sent     = $server->sendEmail($emailParams);
