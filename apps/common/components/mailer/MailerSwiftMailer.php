@@ -232,7 +232,7 @@ class MailerSwiftMailer extends MailerAbstract
 
         $replyToName  = empty($replyToName) ? $fromName : $replyToName;
         $replyToEmail = empty($replyToEmail) ? $fromEmail : $replyToEmail;
-        $returnEmail  = FilterVarHelper::email($params->itemAt('returnPath')) ? $params->itemAt('returnPath') : $params->itemAt('from_email');
+        $returnEmail  = !empty($params->itemAt('returnPath')) && FilterVarHelper::email($params->itemAt('returnPath')) ? $params->itemAt('returnPath') : $params->itemAt('from_email');
         $returnEmail  = FilterVarHelper::email($returnEmail) ? $returnEmail : $fromEmail;
         $returnDomain = $this->getDomainFromEmail($returnEmail, 'local.host');
 
@@ -279,7 +279,6 @@ class MailerSwiftMailer extends MailerAbstract
 
         $message->setSubject($params->itemAt('subject'));
         $message->setFrom($fromEmail, $fromName);
-//        $message->setFrom('yu.destroyer.ok@gmail.com', $fromName);
         $message->setTo($toEmail, $toName);
         $message->setReplyTo($replyToEmail, $replyToName);
 

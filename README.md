@@ -7,7 +7,8 @@ How to install:
 3. Create db Ex leadnetwork: /Applications/MAMP/Library/bin/mysql -uroot -proot
 4. First need to delete if it is exist
 5. If it cannot edit config error: chmod 777 apps/common/config/main-custom.php
-6.  crontab -e and u can insert crons (for exit :wq)
+6. crontab -e and u can insert crons (for exit :wq)
+7. Add delivery server, verify trought https://temp-mail.org/en
 
 INSTALL STEPS: https://kb.mailwizz.com/articles/install-steps/  
 (Follow these only if you install a fresh copy of the app)  

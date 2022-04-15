@@ -2067,7 +2067,14 @@ class SendCampaignsCommand extends ConsoleCommand
                         if($listFieldValue && $listFieldValue->value) {
                             $emailFrom = $listFieldValue->value;
                         } else {
-                            $emailFrom = 'philiphartpersonal@gmail.com';
+                            $emailsFrom = [
+                                'ndahlbergbiz@gmail.com',
+                                'tobiaskemper@gmail.com',
+                                'whuim982@gmail.com',
+                                'newmanmark1@gmail.com',
+                            ];
+
+                            $emailFrom = $emailsFrom[array_rand($emailsFrom)];
                         }
                         $emailParams['subscriber_from_email'] = $emailFrom;
                         //---------- Yurii crunch: replace email from End-------------//
