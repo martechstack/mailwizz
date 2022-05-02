@@ -2068,10 +2068,11 @@ class SendCampaignsCommand extends ConsoleCommand
                             $emailFrom = $listFieldValue->value;
                         } else {
                             $emailsFrom = [
-                                'ndahlbergbiz@gmail.com',
-                                'tobiaskemper@gmail.com',
-                                'whuim982@gmail.com',
-                                'newmanmark1@gmail.com',
+                                'info@nowpro.co'
+//                                'ndahlbergbiz@gmail.com',
+//                                'tobiaskemper@gmail.com',
+//                                'whuim982@gmail.com',
+//                                'newmanmark1@gmail.com',
                             ];
 
                             $emailFrom = $emailsFrom[array_rand($emailsFrom)];
